@@ -1,3 +1,9 @@
+PATH
+  remote: ../konkai
+  specs:
+    konkai (0.1.0)
+      jekyll (>= 3.5, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -204,7 +210,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.14.0)
     multipart-post (2.1.1)
-    nokogiri (1.10.8)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     octokit (4.16.0)
       faraday (>= 0.9)
@@ -236,7 +242,7 @@ GEM
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
     unicode-display_width (1.6.1)
-    zeitwerk (2.2.2)
+    zeitwerk (2.3.0)
 
 PLATFORMS
   ruby
@@ -244,7 +250,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 203)
   jekyll-feed (~> 0.6)
-  minima (~> 2.0)
+  konkai!
   tzinfo-data
 
 BUNDLED WITH
