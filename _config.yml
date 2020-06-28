@@ -24,7 +24,6 @@ email: me@brighamcampbell.com
 
 # Build settings
 markdown: kramdown
-theme: konkai
 plugins:
   - jekyll-feed
 
