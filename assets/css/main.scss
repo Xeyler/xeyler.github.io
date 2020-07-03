@@ -3,32 +3,38 @@
 # This liquid header ensures that the file is compiled to .css
 ---
 
+@import "bootstrap/bootstrap";
+
 body {
 	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	align-items: flex-start;
 }
 
 #nav {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	flex-basis: 0;
+	flex-basis: 10%;
 	flex-grow: 1;
+	min-width: auto;
 	#profile {
 		width: 10em;
 	}
 }
 
 #main {
-	flex-basis: 0;
+	flex-basis: 10%;
 	flex-grow: 8;
 	max-width: 55%;
+	min-width: auto;
 	align-items: center;
+	text-align: justify;
 }
 
 #spacer {
-	flex-basis: 0;
+	flex-basis: 10%;
 	flex-grow: 1;
+	height: auto;
 }
