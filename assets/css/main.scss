@@ -5,23 +5,8 @@
 
 @import "bootstrap/bootstrap";
 
-body {
-	overflow: hidden;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-}
-
-#nav {
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	flex-basis: 10%;
-	flex-grow: 1;
-	min-width: auto;
-	#profile {
-		width: 10em;
-	}
+#profile {	
+	width: 10em;
 }
 
 #main {

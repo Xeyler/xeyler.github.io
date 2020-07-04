@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-	<head>
-
-		{%- include head.html -%}
-
-	</head>
+	{% include head.html %}
 	<body>
-
-		{%- include nav.html -%}
-
-		<div id="main">
-
-			{{ content }}
-
+		<div class="container-fluid">
+			<div class="row">
+				{% include nav.html %}
+				<div class="col-8">
+				{{ content }}
+				</div>
+			</div>
 		</div>
-		<div id="spacer"></div>
 	</body>
 
 </html>
