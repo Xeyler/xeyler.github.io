@@ -4,9 +4,11 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row">
-				{% include nav.html %}
-				<div class="col-8">
-				{{ content }}
+				<div class="custom-navbar-column">
+					{% include nav.html %}
+				</div>
+				<div class="custom-content-column col">
+					{{ content }}
 				</div>
 			</div>
 		</div>

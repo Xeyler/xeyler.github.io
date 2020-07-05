@@ -1,0 +1,11 @@
+.custom-navbar {
+	@extend .navbar-expand-#{$navbar-stack-breakpoint};
+}
+
+.custom-navbar-column {
+	@extend .col-#{$navbar-stack-breakpoint}-#{$navbar-size * $grid-columns};
+}
+
+.custom-content-column {
+	@extend .col-#{$navbar-stack-breakpoint}-#{12 - ($navbar-size * 2 * $grid-columns)};
+}
