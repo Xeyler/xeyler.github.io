@@ -1,5 +1,15 @@
 .custom-navbar {
 	@extend .navbar-expand-#{$navbar-stack-breakpoint};
+	img {
+		@extend .d-none;
+		@extend .d-#{$navbar-stack-breakpoint}-block;
+	}
+}
+
+@include media-breakpoint-up(#{$navbar-stack-breakpoint}) {
+	.custom-navbar {
+		position: fixed;
+	}
 }
 
 .custom-navbar-column {
