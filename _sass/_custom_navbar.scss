@@ -1,14 +1,31 @@
-.custom-navbar {
+#custom-navbar {
 	@extend .navbar-expand-#{$navbar-stack-breakpoint};
 	img {
 		@extend .d-none;
 		@extend .d-#{$navbar-stack-breakpoint}-block;
+		width: 10vw;
 	}
 }
 
 @include media-breakpoint-up(#{$navbar-stack-breakpoint}) {
-	.custom-navbar {
+	#custom-navbar {
+		padding-left: 25%;
+	}
+
+	#navbar-contents {
 		position: fixed;
+	}
+
+}
+
+#page-contents {
+	@extend .py-#{$navbar-stack-breakpoint}-5;
+}
+
+@include media-breakpoint-down(#{$navbar-stack-breakpoint}) {
+	.custom-content-column {
+		margin: auto;
+		width: map-get($grid-breakpoints, md);
 	}
 }
 
@@ -17,5 +34,6 @@
 }
 
 .custom-content-column {
-	@extend .col-#{$navbar-stack-breakpoint}-#{12 - ($navbar-size * 2 * $grid-columns)};
+	@extend .col-#{$navbar-stack-breakpoint}-#{$grid-columns - ($navbar-size * 2 * $grid-columns)};
 }
+

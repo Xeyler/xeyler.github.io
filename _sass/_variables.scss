@@ -1,11 +1,10 @@
-$navbar-stack-breakpoint: "nav-collapse";
-$navbar-size: .25; // Navbar column width percentage
+$navbar-stack-breakpoint: "lg";
+$navbar-size: 3 / 12; // Navbar column width
 
 $grid-breakpoints: (
 	xs: 0,
 	sm: 576px,
 	md: 768px,
-	nav-collapse: 850px,
 	lg: 992px,
   	xl: 1200px,
   	xxl: 1400px
