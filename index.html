@@ -1,9 +1,15 @@
 ---
 layout: default
+title: ~/
+nav_include: true
+nav_order: 1
 ---
 
-<h1>Welcome</h1>
-
 {% for post in site.posts %}
-	<a href="{{ post.url }}">{{ post.title }}</a>
+	<h2>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+	</h2>
+	<div class="excerpt">
+		{{ post.excerpt }}
+	</div>
 {% endfor %}

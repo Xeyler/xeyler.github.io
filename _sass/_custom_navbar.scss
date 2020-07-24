@@ -1,11 +1,14 @@
 #custom-navbar {
 	@extend .navbar-expand-#{$navbar-stack-breakpoint};
-	img {
+	#profile {
 		@extend .d-none;
 		@extend .d-#{$navbar-stack-breakpoint}-block;
 		width: 10vw;
 		max-width: 150px;
 		height: auto;
+	}
+	#active-nav-link {
+		text-decoration: underline;
 	}
 }
 
