@@ -8,7 +8,11 @@
 		height: auto;
 	}
 	#active-nav-link {
+		@extend .font-weight-bold;
 		text-decoration: underline;
+	}
+	.navbar-toggler {
+		margin-left: auto;
 	}
 }
 

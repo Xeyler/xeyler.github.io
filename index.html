@@ -1,15 +1,20 @@
 ---
 layout: default
-title: ~/
+title: Home
 nav_include: true
 nav_order: 1
 ---
 
 {% for post in site.posts %}
-	<h2>
-		<a href="{{ post.url }}">{{ post.title }}</a>
-	</h2>
-	<div class="excerpt">
-		{{ post.excerpt }}
+	<div class="article-card">
+		<div id="article-date">
+			{{ post.date | date_to_string }}
+		</div>
+		<h2 id="article-title">
+			<a href="{{ post.url }}" role="link" aria-label="{{ post.title }}">{{ post.title }}</a>
+		</h2>
+		<div id="article-excerpt">
+			{{ post.excerpt }}
+		</div>
 	</div>
 {% endfor %}

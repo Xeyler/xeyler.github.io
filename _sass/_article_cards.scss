@@ -1,3 +1,16 @@
-.excerpt {
-	@extend .pl-#{$navbar-stack-breakpoint}-5
+.article-card {
+	@extend .mb-4;
+
+	#article-date {
+		@extend .text-muted;
+		font-size: 90%;
+	}
+
+	#article-title {
+		@extend .font-weight-bold
+	}
+
+	#article-excerpt {
+		@extend .pl-#{$navbar-stack-breakpoint}-5
+	}
 }

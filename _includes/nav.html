@@ -3,26 +3,26 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbar-contents">
-		<div class="nav flex-column">
+		<ul class="nav flex-column">
 			<li class="nav-item">
-				<a href="{% link index.html %}">
-					<img id="profile" src="{% link /assets/img/profile.jpg %}">
+				<a tabindex="-1" href="{% link index.html %}">
+					<img class="pb-1" id="profile" src="{% link /assets/img/profile.jpg %}" alt="Profile picture">
 				</a>
 			</li>
 			{% assign pages = site.pages | sort: "nav_order" %}
 			{% for item in pages %}
 				{% if item.nav_include %}
 					<li class="nav-item">
-						<a class="p-1 nav-link" {% if item.url == page.url %}id="active-nav-link"{% endif %} href="{{ item.url }}">{{ item.title }}</a>
+						<a class="p-1 nav-link" {% if item.url == page.url %}id="active-nav-link"{% endif %} href="{{ item.url }}" role="link" aria-label="{{ item.title }}">{{ item.title }}</a>
 					</li>
 				{% endif %}
 			{% endfor %}
 			<li class="nav-item">
-				<a class="p-1 nav-link" href="https://github.com/Xeyler">
-					<img align="bottom" src="{% link /assets/img/github-logo.svg %}">
+				<a class="p-1 nav-link" href="https://github.com/Xeyler" role="link" aria-label="GitHub">
+					<img style="position: relative; top: -2px;" src="{% link /assets/img/github-logo.svg %}" alt="">
 					GitHub
 				</a>
 			</li>
-		</div>
+		</ul>
 	</ul>
 </nav>

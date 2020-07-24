@@ -16,7 +16,7 @@ description: >-
   and everything in-between. Psuedointellect, regrettable puns, head-scratching,
   and poorly-written code abound. Enjoy!
 url: "https://www.brighamcampbell.com"
-lang: en_US
+lang: en-US
 
 baseurl: "" # the subpath of your site, e.g. /blog
 google_analytics: UA-155275688-1
