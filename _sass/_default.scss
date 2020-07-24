@@ -1,0 +1,5 @@
+#page-contents {
+	@extend .my-#{$navbar-stack-breakpoint}-5;
+	@extend .px-0
+}
+
