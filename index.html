@@ -10,8 +10,8 @@ nav_order: 1
 		<div id="article-date">
 			{{ post.date | date_to_string }}
 		</div>
-		<h2 id="article-title">
-			<a href="{{ post.url }}" role="link" aria-label="{{ post.title }}">{{ post.title }}</a>
+		<h2>
+			<a id="article-title" href="{{ post.url }}" role="link" aria-label="{{ post.title }}">{{ post.title }}</a>
 		</h2>
 		<div id="article-excerpt">
 			{{ post.excerpt }}

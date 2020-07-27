@@ -28,10 +28,6 @@
 
 }
 
-#page-contents {
-	@extend .py-#{$navbar-stack-breakpoint}-5;
-}
-
 @include media-breakpoint-down(#{$navbar-stack-breakpoint}) {
 	.custom-content-column {
 		margin: auto;

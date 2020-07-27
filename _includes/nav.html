@@ -1,13 +1,11 @@
 <nav class="nav navbar-light" id="custom-navbar">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-contents">
+	<button class="navbar-toggler mt-2" type="button" data-toggle="collapse" data-target="#navbar-contents">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbar-contents">
 		<ul class="nav flex-column">
 			<li class="nav-item">
-				<a tabindex="-1" href="{% link index.html %}">
-					<img class="pb-1" id="profile" src="{% link /assets/img/profile.jpg %}" alt="Profile picture">
-				</a>
+				<img class="pb-1" id="profile" src="{% link /assets/img/profile.jpg %}" alt="Profile picture">
 			</li>
 			{% assign pages = site.pages | sort: "nav_order" %}
 			{% for item in pages %}

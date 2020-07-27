@@ -7,10 +7,11 @@
 	}
 
 	#article-title {
-		@extend .font-weight-bold
+		@extend .font-weight-bold;
+		text-decoration: none !important;
 	}
 
 	#article-excerpt {
-		@extend .pl-#{$navbar-stack-breakpoint}-5
+		@extend .pl-#{$navbar-stack-breakpoint}-5;
 	}
 }
