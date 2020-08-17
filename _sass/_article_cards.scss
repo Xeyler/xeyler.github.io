@@ -1,17 +1,17 @@
 .article-card {
 	@extend .mb-4;
+}
 
-	#article-date {
-		@extend .text-muted;
-		font-size: 90%;
-	}
+.article-date {
+	@extend .text-muted;
+	font-size: 90%;
+}
 
-	#article-title {
-		@extend .font-weight-bold;
-		text-decoration: none !important;
-	}
+.article-title {
+	@extend .font-weight-bold;
+	text-decoration: none !important;
+}
 
-	#article-excerpt {
-		@extend .pl-#{$navbar-stack-breakpoint}-5;
-	}
+.article-excerpt {
+	@extend .pl-#{$navbar-stack-breakpoint}-5;
 }

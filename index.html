@@ -7,13 +7,13 @@ nav_order: 1
 
 {% for post in site.posts %}
 	<div class="article-card">
-		<div id="article-date">
+		<div class="article-date">
 			{{ post.date | date_to_string }}
 		</div>
 		<h2>
-			<a id="article-title" href="{{ post.url }}" role="link" aria-label="{{ post.title }}">{{ post.title }}</a>
+			<a class="article-title" href="{{ post.url }}" role="link" aria-label="{{ post.title }}">{{ post.title }}</a>
 		</h2>
-		<div id="article-excerpt">
+		<div class="article-excerpt">
 			{{ post.excerpt }}
 		</div>
 	</div>

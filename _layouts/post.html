@@ -2,4 +2,11 @@
 layout: default
 ---
 
+<div class="article-date">
+	{{ page.date | date_to_string }}
+</div>
+<h2 class="article-title">
+	{{ page.title }}	
+</h2>
+
 {{ content }}
