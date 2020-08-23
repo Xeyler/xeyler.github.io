@@ -3,6 +3,8 @@
 	#profile {
 		@extend .d-none;
 		@extend .d-#{$navbar-stack-breakpoint}-block;
+
+		@extend .mb-1;
 		width: 10vw;
 		max-width: 150px;
 		height: auto;
