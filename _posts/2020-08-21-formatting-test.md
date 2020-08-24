@@ -2,8 +2,6 @@
 title: A Formatting Test
 ---
 
-# Level 1 Header
-
 ## Level 2 Header
 
 ### Level 3 Header
@@ -12,10 +10,11 @@ title: A Formatting Test
 
 ##### Level 5 Header
 
-The following is a Latex equation. Tying in MathJax is probably going to be a bit of a project, so until I get around to that, it's going to look like a lame equation:
+A latex equation involving the variable $$x$$: 
 
-$$f(x) = x^2$$
-
+$$
+f(x) = x^2
+$$
 
 Here's a table:
 
@@ -34,12 +33,14 @@ Here's a table:
 
 Here's [a link to Google](https://www.google.com). Google basically wrote the code for my website.
 
-<figure>
-	<img src="/assets/img/margaret.png">
-	<figcaption>Margaret Hamilton is a super cool computer scientist!</figcaption>
-</figure>
+{% include post/img-figure.html 
+	url="/assets/img/margaret.jpg"
+	caption="Margaret Hamilton is a super cool computer scientist!"
+	alt="Margaret Hamilton standing next to a stack of program listings."
+%}
 
 Here's a JS code block:
+
 {% highlight javascript %}
 var hello = 'world';
 hello += 1;

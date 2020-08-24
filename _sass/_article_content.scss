@@ -1,6 +1,9 @@
 .article-content {
-	figure {
+	.img-figure {
 		@extend .figure;
+		@extend .text-center;
+
+		width: 100%;
 		img {
 			@extend .figure-img;
 			@extend .mb-1;
