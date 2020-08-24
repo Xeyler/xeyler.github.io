@@ -1,0 +1,29 @@
+.article-content {
+	figure {
+		@extend .figure;
+		img {
+			@extend .figure-img;
+			@extend .mb-1;
+		}
+
+		figcaption {
+			@extend .figure-caption;
+			@extend .text-center;
+		}
+	}
+	img {
+		@extend .img-fluid;
+	}
+	table {
+		@extend .table;
+		@extend .table-bordered;
+		@extend .table-sm;
+		@extend .table-striped;
+	}
+	blockquote {
+		@extend .blockquote;
+		@extend .pl-3;
+		@extend .border-left;
+		border-width: .15em !important;
+	}
+}
