@@ -5,7 +5,7 @@
 	<div class="collapse navbar-collapse" id="navbar-contents">
 		<ul class="nav flex-column">
 			<li class="nav-item">
-				<img id="profile" src="{% link /assets/img/profile.jpg %}" alt="Profile picture">
+				<img loading="lazy" src="{% link /assets/img/profile.jpg %}" id="profile" alt="Profile picture">
 			</li>
 			{% assign pages = site.pages | sort: "nav_order" %}
 			{% for item in pages %}
@@ -22,5 +22,5 @@
 				</a>
 			</li>
 		</ul>
-	</ul>
+	</div>
 </nav>

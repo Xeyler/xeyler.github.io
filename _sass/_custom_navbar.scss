@@ -6,7 +6,7 @@
 
 		@extend .mb-1;
 		width: 10vw;
-		max-width: 150px;
+		max-width: max-content;
 		height: auto;
 	}
 	#active-nav-link {
