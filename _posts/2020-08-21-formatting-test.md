@@ -10,6 +10,17 @@ title: A Formatting Test
 
 ##### Level 5 Header
 
+1. Here's
+2. A
+3. Numbered
+4. List
+
+- And
+- An
+- Unordered
+- List
+- Too
+
 A latex equation involving the variable $$x$$: 
 
 $$
@@ -31,7 +42,7 @@ Here's a table:
 > > Look at this, it even has multiple levels!
 > > > Let's be honest, when am I ever going to use this?
 
-Here's [a link to Google](https://www.google.com). Google basically wrote the code for my website.
+Here's {% include post/link.html url="https://www.google.com" text="a link to Google" %}. Google basically wrote the code for my website.
 
 {% include post/img-figure.html 
 	url="/assets/img/margaret.jpg"
