@@ -7,6 +7,12 @@
 	{%- if jekyll.environment == 'production' and site.google_analytics -%}
 		{%- include google-analytics.html -%}
 	{%- endif -%}
+	{%- if page.summary -%}
+		<meta name="description" content="{{ page.summary | escape }}">
+	{%- endif -%}
+	{%- if page.tags -%}
+		<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}">
+	{%- endif -%}
 	<title>
 		{%- if page.layout == "post" -%}
 			{{ page.title }}

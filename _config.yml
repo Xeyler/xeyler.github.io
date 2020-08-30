@@ -26,6 +26,7 @@ email: me@brighamcampbell.com
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 sass:
   style: compressed
 
