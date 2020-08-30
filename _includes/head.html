@@ -7,8 +7,10 @@
 	{%- if jekyll.environment == 'production' and site.google_analytics -%}
 		{%- include google-analytics.html -%}
 	{%- endif -%}
-	{%- if page.summary -%}
-		<meta name="description" content="{{ page.summary | escape }}">
+	{%- if page.description -%}
+		<meta name="description" content="{{ page.description | escape }}">
+	{%- else -%}
+		<meta name="description" content="{{ site.description | escape }}">
 	{%- endif -%}
 	{%- if page.tags -%}
 		<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}">
@@ -17,7 +19,7 @@
 		{%- if page.layout == "post" -%}
 			{{ page.title }}
 		{%- else -%}
-			Brigham Campbell - {{ page.title}}
+			Brigham Campbell - {{ page.title }}
 		{%- endif -%}
 	</title>
 </head>

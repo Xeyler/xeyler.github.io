@@ -9,8 +9,6 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # SEO settings
-title: Core Dumped
-tagline: Notes on Computer Science and Electronics
 description: >-
   A collection of my personal notes on computer science, electronic engineering, 
   and everything in-between. Psuedointellect, regrettable puns, head-scratching,
