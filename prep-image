@@ -1,0 +1,15 @@
+#!/bin/sh
+
+for image in "$@"
+do
+	echo "Stripping metadata from \`""$image""\`..."
+	exiftool -overwrite_original -all= "$image"
+
+	echo "Resizing to maximum width..."
+	mogrify -resize 1000\> "$image"
+
+	echo "Optimizing..."
+	jpegoptim -m 80% "$image"
+
+	echo
+done
