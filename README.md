@@ -1,5 +1,5 @@
-Hey, there! This Jekyll repo houses my blog. You can (read it
-here)[https://www.brighamcampbell.com]!
+Hey, there! This Jekyll repo houses my blog. You can [read it
+here](https://www.brighamcampbell.com)!
 
 ## Adding images
 
@@ -39,8 +39,8 @@ However, here are some important things about this repo:
 * Google analytics is optionally integrated via the `google_analytics` key in
   `_config.yml`.
 
-Documentation relevant to changing the website is accessible via (the Jekyll
-website)[https://jekyllrb.com/docs/]. Keep in mind that the published Jekyll
+Documentation relevant to changing the website is accessible via [the Jekyll
+website](https://jekyllrb.com/docs/). Keep in mind that the published Jekyll
 documentation is a couple versions ahead of the latest version used by GitHub
 Pages(dictated by the github-pages gem). Use `bundle exec github-pages
 versions` to show the versions of dependencies that we're running.
