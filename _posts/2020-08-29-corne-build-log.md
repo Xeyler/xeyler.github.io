@@ -31,7 +31,7 @@ it's assembled by an absolute pro:
 
 ## Collecting the Pieces
 
-After weeks of convincing myself that I wouldn't irrepairably screw up the
+After weeks of convincing myself that I wouldn't irreparably screw up the
 build and that I wouldn't accidentally hate typing on the keyboard once I
 finished it, I finally began hunting down the parts I needed. Eventually, the
 receipts piled up into a collection somewhat resembling the following:
@@ -59,7 +59,7 @@ it laser-cut at my university's "maker shop".
 Innocent enough.
 
 After I got a $15 sheet of plexiglass, I took it to the shop, slapped it in the
-cutter, loaded up the vector file, and set the cutter to do it's thing. Shortly
+cutter, loaded up the vector file, and set the cutter to do its thing. Shortly
 thereafter, the plexiglass burst into flames! Apparently, there are very
 important differences between acrylic and plexiglass. One such difference is
 that plexiglass is much more likely to burn.
