@@ -9,7 +9,7 @@ do
 	mogrify -resize 1000\> "$image"
 
 	echo "Optimizing..."
-	jpegoptim -m 80% "$image"
+	jpegoptim "$image"
 
 	echo
 done
